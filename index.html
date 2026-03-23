@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,99 +9,133 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Impact:wght@400;700&display=swap');
         .logo-text { font-family: Impact, sans-serif; }
+        .tab-button { transition: all 0.2s; }
+        .tab-button.active { border-bottom: 4px solid #f59e0b; color: #fcd34d; }
     </style>
 </head>
 <body class="bg-black text-amber-400 min-h-screen">
     <div class="max-w-5xl mx-auto px-4 py-8">
         <!-- Logo -->
         <div class="flex justify-center">
-            <img src="logo3.png" alt="Fast Jax" class="w-full max-w-2xl mx-auto"> <!-- SAVE ATTACHED IMAGE AS logo.png -->
-        </div>
-        
-        <!-- Logo Text/contact info -->
-        <h1 class="logo-text text-7xl tracking-widest text-center mt-4 mb-12 text-amber-400">KEYS AND TUNES</h1>
-        <h1 class="logo-text text-7xl tracking-widest text-center mt-4 mb-12 text-amber-400">(616)-329-7107</h1>
-        <h1 class="logo-text text-6xl tracking-widest text-center mt-4 mb-12 text-amber-400">MOBILE SERVICES</p>
-        <h1 class="logo-text text-2xl tracking-widest text-center mt-4 mb-12 text-amber-400">FROM</p>
-        <h1 class="logo-text text-6xl tracking-widest text-center mt-4 mb-12 text-amber-400">GRAND RAPIRDS</p>
-        <h1 class="logo-text text-2xl tracking-widest text-center mt-4 mb-12 text-amber-400">TO EAST</p>
-        <h1 class="logo-text text-6xl tracking-widest text-center mt-4 mb-12 text-amber-400">LANSING</p>
-       
-        <!-- What We Offer -->
-        <div class="bg-zinc-950 border-4 border-amber-400 p-8 squared-xl mb-12 text-center">
-            <p class="text-2xl font-bold">==============================</p>
-            <p class="text-2xl font-italic">***! 24HR KEY SERVICE FROM GR TO LANSING !***</p>
-            <p class="text-2xl font-bold">==========</p>
-            <p class="text-4xl font-italic">BASIC TUNES AND BCM TWEAKS</p>
-            <p class="text-2xl font-bold">==========</p>
-            <p class="text-3xl font-italic">SCAN AND FIX AND MINOR MECH/ELEC AUTOMOTIVE ISSUES</p>
-            <p class="text-2xl font-bold">==========</p>
-            <p class="text-4xl font-italic">ENGINE/TRANS OIL CHANGES</p>
-            <p class="text-2xl font-bold">==========================</p>
-            <p class="text-2xl font-bold">. . . . . . . . . . . . . . . . . . . . .</p>
-            <p class="text-4xl font-italic">MOBILE SERVICE CALL FEES ARE APPLICABLE</p>
-            <p class="text-4xl font-italic">FEES ARE RELATIVE TO DISTANCE AND TIME OF SERVICE </p>
-        </div>
-        
-        <!-- Services -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <!-- Duplicate Key -->
-            <div class="bg-zinc-950 border-4 border-amber-400 p-8 rounded-2xl">
-                <h2 class="text-3xl font-italic mb-6 text-center">DUPLICATE KEY</h2>
-                <ul class="space-y-3 text-xl">
-                    <li>$100 — Honda, Acura, Ford, GM, KIA</li>
-                    <li>$125 — FCA/Stellantis, Toyota, Hyundai</li>
-                    <li>$150 — BMW, Mercedes-Benz</li>
-                </ul>
-            </div>
-
-            <!-- All Keys Lost -->
-            <div class="bg-zinc-950 border-4 border-amber-400 p-8 rounded-2xl">
-                <h2 class="text-3xl font-italic mb-6 text-center">ALL KEYS LOST</h2>
-                <ul class="space-y-3 text-xl">
-                    <li>$200 — Honda, Acura, Ford, GM, KIA</li>
-                    <li>$250 — FCA/Stellantis, Toyota</li>
-                </ul>
-            </div>
-
-            <!-- Fan Tune -->
-            <div class="bg-zinc-950 border-4 border-amber-400 p-8 rounded-2xl">
-                <h2 class="text-3xl font-italic mb-6 text-center">FAN TUNE<br><span class="text-base">(after cooling upgrades)</span></h2>
-                <ul class="space-y-3 text-xl">
-                    <li>$75 — GM, FCA/Stellantis add-on</li>
-                    <li>$150 — GM, FCA/Stellantis stand-alone</li>
-                </ul>
-            </div>
-
-            <!-- MDS/DoD Disable -->
-            <div class="bg-zinc-950 border-4 border-amber-400 p-8 rounded-2xl">
-                <h2 class="text-3xl font-italic mb-6 text-center">MDS/DoD DISABLE TUNE</h2>
-                <ul class="space-y-3 text-xl">
-                    <li>$200 — GM, FCA/Stellantis add-on</li>
-                    <li>$250 — GM, FCA/Stellantis stand-alone</li>
-                </ul>
-                
-            </div>
-
-            <!-- BCM Tweaks -->
-            <div class="bg-zinc-950 border-4 border-amber-400 p-8 rounded-2xl">
-                <h2 class="text-3xl font-italic mb-6 text-center">VEHICLE ADAPTATIONS/BCM TWEAKS</h2>
-                <ul class="space-y-3 text-xl">
-                    <li>$50 — add-on to any tune</li>
-                    <li>$100 — stand-alone</li>
-                </ul>
-            </div>
+            <img src="logo3.png" alt="Fast Jax" class="w-full max-w-2xl mx-auto">
         </div>
 
-        <!-- HP Tuners Disclaimer -->
-        <div class="bg-zinc-950 border-80 border-amber-400 p-8 rounded-xl mb-12 text-center">
-            <p class="text-5xl font-italic">!! ATTENTION !!</p>
-            <p class="text-2xl font-italic text-left">-> ALL TUNES APPLIED VIA HP TUNERS SOFTWARE + MPVI3</p>
-            <p class="text-2xl font-italic text-left">-> PCM UNLOCK SERVICE REQUIRED FOR TUNING 2015+ FCA/STELLANTIS VEHICLES</p>
-            <p class="text-2xl font-italic text-left">-> YOU WILL NEED TO PURCHASE CREDITS FROM ME IF YOU DO NOT OWN YOUR OWN MPVI2/3/4 INTERFACE  &amp; CREDITS</p>
+        <!-- Contact -->
+        <div class="text-center mt-4 mb-8">
+            <h1 class="logo-text text-6xl tracking-widest text-amber-400">(616)-329-7107</h1>
+            <h1 class="logo-text text-3xl tracking-widest text-amber-400 mt-2">ryejax@fastjaxkt.com</h1>
         </div>
 
-        <div class="text-center text-italic text-3xl mt-16 text-sm opacity-60">2026 • Fast Jax Keys and Tunes • Ionia, MI</div>
+        <!-- Top Nav Tabs -->
+        <div class="flex flex-wrap justify-center gap-2 border-b border-amber-400 mb-8">
+            <button onclick="switchTab(0)" class="tab-button active px-6 py-3 text-xl font-bold">HOME</button>
+            <button onclick="switchTab(1)" class="tab-button px-6 py-3 text-xl font-bold">KEYS</button>
+            <button onclick="switchTab(2)" class="tab-button px-6 py-3 text-xl font-bold">TUNES</button>
+            <button onclick="switchTab(3)" class="tab-button px-6 py-3 text-xl font-bold">OTHER SERVICES</button>
+        </div>
+
+        <!-- Tab Contents -->
+        <!-- HOME -->
+        <div id="tab-0" class="tab-content">
+            <h2 class="logo-text text-5xl text-center mb-8">WE COVER EVERY MAJOR MAKE & MODEL</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <div>
+                    <h3 class="text-2xl mb-4 text-amber-300">DOMESTIC</h3>
+                    <ul class="text-xl space-y-2">
+                        <li>Ford • Chevrolet • GMC</li>
+                        <li>Buick • Cadillac • Dodge</li>
+                        <li>Jeep • Chrysler • Ram</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-2xl mb-4 text-amber-300">IMPORT</h3>
+                    <ul class="text-xl space-y-2">
+                        <li>Toyota • Honda • Hyundai</li>
+                        <li>Kia • Nissan • Mazda</li>
+                        <li>Subaru • Mitsubishi</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-2xl mb-4 text-amber-300">LUXURY / HIGH-END</h3>
+                    <ul class="text-xl space-y-2">
+                        <li>BMW • Mercedes-Benz</li>
+                        <li>Audi • Lexus • Acura</li>
+                        <li>VW • Porsche (select)</li>
+                    </ul>
+                </div>
+            </div>
+            <p class="text-center mt-8 text-2xl">...and thousands more from 80+ brands. Ask for your exact model!</p>
+            <p class="text-center text-xl mt-12">24HR MOBILE SERVICE • ADA • CASCADE • ROCKFORD • EAST IONIA</p>
+        </div>
+
+        <!-- KEYS -->
+        <div id="tab-1" class="tab-content hidden">
+            <h2 class="logo-text text-5xl text-center mb-8">KEY SERVICES</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-zinc-950 border-4 border-amber-400 p-8 rounded-2xl">
+                    <h3 class="text-3xl mb-6 text-center">DUPLICATE KEYS</h3>
+                    <ul class="space-y-4 text-xl">
+                        <li>$100 — Cut + Program (most domestic/import)</li>
+                        <li>$150 — Smart / Proximity Key</li>
+                    </ul>
+                </div>
+                <div class="bg-zinc-950 border-4 border-amber-400 p-8 rounded-2xl">
+                    <h3 class="text-3xl mb-6 text-center">ALL KEYS LOST (AKL)</h3>
+                    <ul class="space-y-4 text-xl">
+                        <li>$150–$300 — Regular AKL</li>
+                        <li>$200–$350 — Smart AKL</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-8 bg-zinc-950 border-4 border-amber-400 p-8 rounded-2xl text-center">
+                <p class="text-2xl">House Key + Rekey — $45</p>
+                <p class="text-2xl mt-4">Trip Fee — $40</p>
+                <p class="text-2xl">31–50 miles — +$80</p>
+                <p class="text-2xl">After 8pm / Before 8am / Weekends — +$80</p>
+            </div>
+        </div>
+
+        <!-- TUNES -->
+        <div id="tab-2" class="tab-content hidden">
+            <h2 class="logo-text text-5xl text-center mb-8">HP TUNERS SERVICES</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-zinc-950 border-4 border-amber-400 p-8 rounded-2xl">
+                    <h3 class="text-3xl mb-6 text-center">MDS / DOD DISABLE</h3>
+                    <p class="text-2xl">$200 + $150 (2 credits to my MPVI3)</p>
+                </div>
+                <div class="bg-zinc-950 border-4 border-amber-400 p-8 rounded-2xl">
+                    <h3 class="text-3xl mb-6 text-center">FAN TEMP TUNE</h3>
+                    <p class="text-2xl">$150 stand-alone</p>
+                    <p class="text-2xl mt-4">OR +$75 when added to MDS/DOD delete</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- OTHER SERVICES -->
+        <div id="tab-3" class="tab-content hidden">
+            <h2 class="logo-text text-5xl text-center mb-8">OTHER SERVICES</h2>
+            <div class="bg-zinc-950 border-4 border-amber-400 p-8 rounded-2xl text-center text-xl">
+                <p class="mb-6">• Full vehicle scans & minor mechanical/electrical fixes</p>
+                <p class="mb-6">• Engine / Transmission oil changes</p>
+                <p class="mb-6">• BCM adaptations & tweaks</p>
+                <p class="text-3xl mt-8">Foreign & luxury vehicles our specialty — domestic covered too</p>
+            </div>
+            <p class="text-center text-2xl mt-12">24HR • MOBILE • SAME DAY SERVICE</p>
+        </div>
+
+        <div class="text-center text-sm opacity-60 mt-16">2026 • Fast Jax Keys and Tunes • Ionia, MI</div>
     </div>
+
+    <script>
+        function switchTab(n) {
+            document.querySelectorAll('.tab-content').forEach((el,i) => {
+                el.classList.toggle('hidden', i !== n);
+            });
+            document.querySelectorAll('.tab-button').forEach((el,i) => {
+                el.classList.toggle('active', i === n);
+            });}
+        // Default to Home
+        switchTab(0);
+    </script>
 </body>
 </html>
